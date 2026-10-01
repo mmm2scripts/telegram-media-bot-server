@@ -1,0 +1,20 @@
+{
+  "name": "telegram-media-bot-server",
+  "version": "1.0.0",
+  "description": "Private Express server that receives media packs from a Cloudflare Worker and sends them to Telegram.",
+  "type": "module",
+  "main": "src/server.js",
+  "license": "MIT",
+  "private": true,
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "multer": "^2.0.2"
+  }
+}
